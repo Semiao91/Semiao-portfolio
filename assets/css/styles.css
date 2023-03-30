@@ -428,6 +428,18 @@ body.light-theme{
   justify-self: center;
 }
 
+.about__img__first{
+  width: 300px;
+  border-radius: 1.5rem;
+  justify-self: center;
+}
+
+.about__img__second{
+  width: 300px;
+  border-radius: 1.5rem;
+  
+}
+
 .about__data{
   text-align: center;
 }
@@ -513,6 +525,11 @@ body.light-theme{
 
 .skills__level{
   font-size: var(--tiny-font-size);
+}
+
+.icon-tech{
+  height: 2rem;
+  
 }
 /*=============== SERVICES ===============*/
 /* .services__container{
@@ -668,6 +685,11 @@ body.light-theme{
   display: flex;
   align-items: center;
   column-gap: .25rem;
+}
+
+.work-links{
+  display: flex;
+  gap: 20px;
 }
 
 .work__button:hover .work__icon{
@@ -1171,3 +1193,36 @@ body.light-theme{
 }
 
 
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  position: relative;
+  display: block;
+  height: auto;
+}
